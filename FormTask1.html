@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><strong>Create Account</strong></h1>
+    <form action="/submit" method="post">
+        <label for=" first name" style="color: rgb(74, 7, 245);"><strong>First name*</strong></label>
+        <input type="text" id="name" placeholder="Enter the name" required>
+        
+        <label for="last name" style="color: rgb(111, 5, 250);"><strong>Last name*</strong></label>
+        <input type="text" id="last name" placeholder="Enter the name again" required><br><br>
+
+        <label for="email"style="color: rgb(74, 7, 245);">Email*</label>
+        <input type="email" id="email" placeholder="Enter the email" required><br><br>
+
+        <label for="password" style="color: rgb(74, 7, 245);">Password*</label>
+        <input type="password" id="password" placeholder="Enter the password" required>
+
+        <label for="confirm password" style="color: rgb(74, 7, 245);">Confirm password*</label>
+        <input type="password" id="Confirm password" placeholder="Enter password again" required><br>
+
+        <p style="color: rgb(74, 7, 245);"><strong>Gender</strong></p>
+        <input type="radio" id="male" name="Gender">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label>
+
+
+         <p style="color: rgb(74, 7, 245);"><strong>Hobbies</strong></p>
+        <input type="checkbox" id="music" name="Hobbies[]" value="Reading">
+        <label for="Music">Music</label>
+
+        <input type="checkbox" id="sports" name="Hobbies[]" value="Sports">
+        <label for="Sports">Sports</label>
+
+        <input type="checkbox" id="travel" name="Hobbies[]" value="travel">
+        <label for="Travel">Travel</label>
+
+        <input type="checkbox" id="MOvies" name="Hobbies[]" value="leanning">
+        <label for="Movies">Movies</label><br><br>
+
+        <label for="source of income" style="color: rgb(74, 7, 245);"><strong>Source of income</strong></label>
+        <input type="text" id="Employe" placeholder="Designation" required>
+        <label for="Income" style="color: rgb(74, 7, 245);">Income</label>
+        <input type="range"><br>
+
+        
+
+        <p style="color: rgb(74, 7, 245);"><strong>Upload a File</strong></p>
+        <label for="file">choose a file:</label>
+        <input type="file" id="file" name="file">
+
+        <label for="AGE" style="color: rgb(74, 7, 245);"><strong>Age</strong></label>
+        <input type="number" id="Age" name="AGE" placeholder="Enter your age" required><br><br><br>
+
+
+        <label for="Bio" style="color: rgb(74, 7, 245);"><strong>BIO</strong></label>
+        <input type="text" name="Bio"><br><br><br><br>
+
+
+
+
+  <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
