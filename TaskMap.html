@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Capitalize the Names</h2>
+    <script>
+        const users=[
+            {name:"Karan", age:21},
+            {name:"Sanjay",age:20},
+            {name:"Captain America", age:30},
+            {name:"Thalapthy",age:50},
+            {name:"Suriya",age:49}
+        ];
+        const capitalizedUsers = users.map(user => {
+      return {
+        name: user.name.charAt(0).toUpperCase() + user.name.slice(1),
+        age: user.age
+      };
+    });
+    document.write("<p><b>Capitalized Names:</b><br>");
+    capitalizedUsers.forEach(user => {
+      document.write(user.name + " (Age: " + user.age + ")<br>");
+    });
+    document.write("</p>");
+    </script>
+</body>
+</html>
